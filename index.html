@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haezul Hafid - Website Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.7);
+            padding: 2.5rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #00d8ff;
+            letter-spacing: 2px;
+        }
+        header h2 {
+            font-weight: 400;
+            margin-top: 0.3rem;
+            color: #80ffff;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h3 {
+            color: #00d8ff;
+            border-bottom: 2px solid #00d8ff;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+        ul.skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0 -0.5rem;
+        }
+        ul.skills-list li {
+            background: #00d8ff;
+            color: #121212;
+            padding: 0.4rem 1rem;
+            margin: 0.3rem 0.5rem;
+            font-weight: 600;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(0,216,255,0.6);
+            transition: background-color 0.3s ease;
+            cursor: default;
+        }
+        ul.skills-list li:hover {
+            background: #008fb3;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+            gap: 1rem;
+        }
+        .portfolio-item {
+            background: #292929;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.8);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,216,255,0.7);
+        }
+        .portfolio-item h4 {
+            margin-top: 0;
+            color: #00d8ff;
+            font-weight: 600;
+        }
+        .portfolio-item p {
+            color: #ccc;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+        }
+        a.contact-link {
+            color: #00d8ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        a.contact-link:hover {
+            color: #80ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <h1>Haezul Hafid</h1>
+            <h2>Website Developer</h2>
+        </header>
+
+        <section aria-labelledby="about-me-title">
+            <h3 id="about-me-title">About Me</h3>
+            <p>Hello! I'm Haezul Hafid, a passionate website developer focused on crafting engaging, user-friendly websites with modern technologies. I love turning ideas into beautiful, functional digital experiences.</p>
+        </section>
+
+        <section aria-labelledby="skills-title">
+            <h3 id="skills-title">Skills</h3>
+            <ul class="skills-list" aria-label="Web development skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Laravel</li>
+                <li>Codeigneter</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+                <li>REST APIs</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="portfolio-title">
+            <h3 id="portfolio-title">Portfolio</h3>
+            <div class="portfolio" role="list">
+                <article class="portfolio-item" role="listitem" tabindex="0" aria-label="Project: Portfolio Website">
+                    <h4>Portfolio Website</h4>
+                    <p>A personal portfolio website showcasing projects and skills with a sleek and modern design.</p>
+                </article>
+                <article class="portfolio-item" role="listitem" tabindex="0" aria-label="Project: E-commerce Site">
+                    <h4>E-commerce Site</h4>
+                    <p>Developed a responsive online store with product browsing, cart, and secure checkout features.</p>
+                </article>
+                <article class="portfolio-item" role="listitem" tabindex="0" aria-label="Project: Blog Platform">
+                    <h4>Blog Platform</h4>
+                    <p>Created a content management system for blogging with social sharing and SEO optimizations.</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="contact-title">
+            <h3 id="contact-title">Contact Me</h3>
+            <p>If you want to get in touch, feel free to say hello via <a href="mailto:haezul@example.com" class="contact-link">email</a>. Let's build something great together!</p>
+        </section>
+
+        <footer>
+            &copy; 2025 Haezul Hafid. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
+
